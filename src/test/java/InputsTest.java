@@ -38,7 +38,6 @@ public class InputsTest {
         driver.findElement(By.tagName("input")).sendKeys("123321");
         softAssert.assertEquals(driver.findElement(By.tagName("input")).getAttribute("value"),"123321");
 
-
         driver.quit();
         softAssert.assertAll();
     }
